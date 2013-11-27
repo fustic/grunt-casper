@@ -76,11 +76,11 @@ exports.init = function (grunt) {
     spawnOpts.push(src);
 
     if (args.length > 0) {
-      if (options.test) {
-        grunt.log.warn('Arguments not supported for test mode');
-      } else {
-        spawnOpts = spawnOpts.concat(args);
-      }
+//       if (options.test) {
+//         grunt.log.warn('Arguments not supported for test mode');
+//       } else {
+		spawnOpts = spawnOpts.concat(args);
+//       }
     }
 
     spawn(cwd,spawnOpts,next,done);
